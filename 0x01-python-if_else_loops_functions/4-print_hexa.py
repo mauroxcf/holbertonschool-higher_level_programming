@@ -1,2 +1,2 @@
-for num in range(0, 98):
+for num in range(0, 99):
     print("{:d} = ".format(num), hex(num))

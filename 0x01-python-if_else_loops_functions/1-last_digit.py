@@ -7,7 +7,7 @@ if number < 0:
 if number > 0:
     lastd = number % 10
 
-print("Last digit of {:d} is {:d} ".format (number, lastd), end ='')
+print("Last digit of {:d} is {:d} ".format(number, lastd), end='')
 
 if lastd == 0:
     print("and is 0")

@@ -1,3 +1,2 @@
 #!/usr/bin/python3
-from easy_print import imprimir
-imprimir()
+import easy_print

@@ -1,12 +1,10 @@
 #!/usr/bin/python3
 def new_in_list(my_list, idx, new_element):
+    new_my_list = my_list.copy()
+    if idx >= len(my_list):
+        return new_my_list
     if idx < 0:
-        return
-    elif idx > len(my_list):
-        return
+        return new_my_list
     else:
-        for i in range(len(my_list)):
-            if i == idx:
-                new_my_list = my_list.copy()
-                new_my_list[i] = new_element
-                return new_my_list
+        new_my_list[idx] = new_element
+        return new_my_list

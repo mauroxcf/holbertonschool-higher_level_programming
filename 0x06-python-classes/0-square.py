@@ -3,6 +3,7 @@
 
 '''Empty Square'''
 
+
 class Square:
     """Class Square"""
     pass # a empty block

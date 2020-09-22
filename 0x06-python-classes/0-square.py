@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 
 
-'''Empty Square'''
+''' Empty Square '''
 
 
 class Square:
-    """Class Square"""
-    pass # a empty block
+    """ Class Square """
+    pass
 
 p = Square()

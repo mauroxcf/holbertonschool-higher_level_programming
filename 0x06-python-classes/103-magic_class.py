@@ -9,7 +9,7 @@ import math
 
 class MagicClass:
     """ MagicClass with bytecode """
-    def __init__(self, raidus):
+    def __init__(self, radius):
         """ initiation of attributes """
         if type(radius) is not int and type(radius) is not float:
             raise TypeError("radius must be a number")

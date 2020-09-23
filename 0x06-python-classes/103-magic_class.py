@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-import math
 
 
 """ BEATIFUL BYTECODE """
 
 
+import math
 class MagicClass:
     """ MagicClass with bytecode """
     def __init__(self, raidus=0):

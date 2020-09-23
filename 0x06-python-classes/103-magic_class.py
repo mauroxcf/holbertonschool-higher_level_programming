@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-import dis
 import math
-
 class MagicClass:
     def __init__(self, raidus=0):
         if type(radius) is not int or type(radius) is not float:
@@ -13,6 +11,3 @@ class MagicClass:
 
     def circumference(self):
         return (2 * math.pi) * self.__radius
-
-
-dis.dis(MagicClass)

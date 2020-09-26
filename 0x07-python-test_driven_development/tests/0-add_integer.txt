@@ -1,0 +1,50 @@
+The ``0-add_integer`` module and task 0
+======================
+
+Using ``add_integer`` function
+-------------------
+
+Importing the function from the module:
+	>>> add_integer = __import__("0-add_integer").add_integer
+
+Normal addition:
+	>>> add_integer(10, 9)
+	19
+
+Negative and positive addition:
+	>>> add_integer(-5, 12)
+	7
+
+Negative and negative addition:
+	>>> add_integer(-8, -22)
+	-30
+
+Float and integer addition:
+	>>> add_integer(36.7, 26)
+	62
+
+Non-number and integer addition:
+	>>> add_integer([2], 10)
+	Traceback (most recent call last):
+	...
+	TypeError: a must be an integer
+
+Only one argument:
+	>>> add_integer(10)
+	108
+
+with out argument:
+	>>> add_integer()
+	Traceback (most recent call last):
+	...
+	TypeError: add_integer() missing 1 required positional argument: 'a'
+
+Check module docstring:
+	 >>> m = __import__("0-add_integer").__doc__
+	 >>> len(m) > 1
+	 True
+
+Function docstring:
+	 >>> f = __import__("0-add_integer").add_integer.__doc__
+	 >>> len(f) > 1
+	 True

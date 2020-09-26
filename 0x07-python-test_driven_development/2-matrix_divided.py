@@ -13,11 +13,11 @@ def matrix_divided(matrix, div):
         'zero_div': 'division by zero'
     }
 
-    if type(matrix) is list:
+    if type(matrix) is list and matrix != []:
         newl = []
         row_list = None
         for sub_list in matrix:
-            if type(sub_list) is list:
+            if type(sub_list) is list and sub_list != []:
                 if row_list is None:
                     row_list = len(sub_list)
                 elif row_list != len(sub_list):

@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ Program that add 2 integers """
 
+
 def add_integer(a, b=98):
     """
     a and b must be integers and if its not, make a cast

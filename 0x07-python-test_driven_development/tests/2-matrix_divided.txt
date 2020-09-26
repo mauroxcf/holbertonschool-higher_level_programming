@@ -1,0 +1,55 @@
+The ``2-matrix_divided`` module and task 1
+======================
+
+Using ``matrix_divided`` function
+-------------------
+
+Importing the function from the module:
+	>>> matrix_divided = __import__("2-matrix_divided").matrix_divided
+
+Normal division:
+	>>> matrix = [[1, 2, 3], [4, 5, 6]]
+	>>> matrix_divided(matrix, 3)
+	[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+
+docstring for function:
+        >>> len(matrix_divided.__doc__) > 0
+        True
+
+division by negative float:
+        >>> print(matrix_divided(matrix, -2.1))
+        [[-0.48, -0.95, -1.43], [-1.9, -2.38, -2.86]]
+
+matrix with 1 element:
+        >>> print(matrix_divided([12], 5))
+        Traceback (most recent call last):
+                ...
+        TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+matrix rows with different size:
+        >>> matrix = [[2, 6, 8], [4, 5]]
+        >>> print(matrix_divided(matrix, 3))
+        Traceback (most recent call last):
+                ...
+        TypeError: Each row of the matrix must have the same size
+
+matrix with list of not integers or floats:
+        >>> matrix = [[3, 1, 2], ["Hello", 5, 3]]
+        >>> print(matrix_divided(matrix, 3))
+        Traceback (most recent call last):
+
+Div is equal to infinite float:
+         >>> matrix_divided([[1, 2], [2, 1]], float('inf'))
+	 [[0.0, 0.0], [0.0, 0.0]]
+
+with out argumets:
+	 >>> matrix_divided()
+	 Traceback (most recent call last):
+	 ...
+	 TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
+
+only one argumet:
+	 >>> matrix_divided([1,2])
+	 Traceback (most recent call last):
+	 ...
+	 TypeError: matrix_divided() missing 1 required positional argument: 'div'

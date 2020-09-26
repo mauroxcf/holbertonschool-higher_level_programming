@@ -14,7 +14,7 @@ def matrix_divided(matrix, div):
     }
 
     if type(matrix) is list and matrix != []:
-        newl = []
+        nw = []
         row_list = None
         for sub_list in matrix:
             if type(sub_list) is list and sub_list != []:
@@ -35,5 +35,5 @@ def matrix_divided(matrix, div):
     if div is 0:
         raise ZeroDivisionError(horrors['zero_div'])
 
-    newl = map(lambda x: list(map(lambda x: round(x / div, 2), x)), matrix)
-    return list(newl)
+    nw = list(map(lambda x: list(map(lambda x: round(x / div, 2), x)), matrix))
+    return nw

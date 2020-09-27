@@ -14,6 +14,8 @@ def matrix_divided(matrix, div):
     }
 
     if type(matrix) is list and matrix != []:
+        if len(matrix) == 0:
+            raise TypeError(horrors["mlist"])
         nw = []
         row_list = None
         for sub_list in matrix:

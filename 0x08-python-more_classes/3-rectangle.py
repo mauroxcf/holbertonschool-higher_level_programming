@@ -48,7 +48,7 @@ class Rectangle:
 
     def __str__(self):
         if self.__width is 0 or self.__height is 0:
-            return 0
+            return ""
         rect_print = "#" * self.__width + "\n"
         rect_print = rect_print * self.__height
         rect_print = rect_print[:-1]

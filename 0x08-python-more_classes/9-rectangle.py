@@ -12,8 +12,8 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         """ instantiation of instance attributes """
-        self.__height = height
-        self.__width = width
+        self.height = height
+        self.width = width
         Rectangle.number_of_instances += 1
 
     @property
@@ -89,4 +89,4 @@ class Rectangle:
     @classmethod
     def square(cls, size=0):
         """ return the square """
-        return (cls(size, size))
+        return cls(size, size)

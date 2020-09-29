@@ -12,8 +12,8 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         """ instantiation of instance attributes """
-        self.height = height
-        self.width = width
+        self.__width = width
+        self.__height = height
         Rectangle.number_of_instances += 1
 
     @property

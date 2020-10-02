@@ -11,8 +11,12 @@ class TestMaxInteger(unittest.TestCase):
     def test_integers(self):
         new_list = [1, 2, 3, 4]
         new_listb = [200, 500, 100,600]
+        new_listc = [10]
+        new_listd = [1200, 600, 300, 100]
         self.assertEqual(max_integer(new_list), 4)
         self.assertEqual(max_integer(new_listb), 600)
+        self.assertEqual(max_integer(new_listc), 10)
+        self.assertEqual(max_integer(new_listd), 1200)
 
     def test_negative_integers(self):
         new_list = [-5, -200, -1000, -2]

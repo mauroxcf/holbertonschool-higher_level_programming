@@ -31,16 +31,6 @@ Test with ":":
          <BLANKLINE>
          its nice
 
-Test with all especial characters:
-    >>> text_indentation("""Holberton.School:its nice?dont you think""")
-        Holberton.
-        <BLANKLINE>
-        School:
-        <BLANKLINE>
-        its nice?
-        <BLANKLINE>
-        dont you think
-
 Test if its not a string:
     >>> text_indentation(12356)
     Traceback (most recent call last):

@@ -14,24 +14,31 @@ Basic test:
 Test with ".":
 	 >>> text_indentation("Holberton.School")
     	 Holberton.
+         <BLANKLINE>
          School
 
 Test with "?":
 	 >>> text_indentation("Holberton?School")
     	 Holberton?
+         <BLANKLINE>
          School
 
 Test with ":":
 	 >>> text_indentation("Holberton.School:its nice")
     	 Holberton.
+         <BLANKLINE>
          School:
+         <BLANKLINE>
          its nice
 
 Test with all especial characters:
     >>> text_indentation("""Holberton.School:its nice?dont you think""")
         Holberton.
+        <BLANKLINE>
         School:
+        <BLANKLINE>
         its nice?
+        <BLANKLINE>
         dont you think
 
 Test if its not a string:
@@ -60,3 +67,24 @@ Function docstring:
      	 >>> len(f) > 1
      	 True
 
+Complete indentation:
+>>> text_indentation("""Lorem ipsum dolor sit amet, consectetur adipiscing elit. \
+... Quonam modo? Utrum igitur tibi litteram videor an totas paginas commovere? \
+... Non autem hoc: igitur ne illud quidem. Fortasse id optimum, sed ubi illud: \
+... Plus semper voluptatis? Teneo, inquit, finem illi videri nihil dolere.""")
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+<BLANKLINE>
+Quonam modo?
+<BLANKLINE>
+Utrum igitur tibi litteram videor an totas paginas commovere?
+<BLANKLINE>
+Non autem hoc:
+<BLANKLINE>
+igitur ne illud quidem.
+<BLANKLINE>
+Fortasse id optimum, sed ubi illud:
+<BLANKLINE>
+Plus semper voluptatis?
+<BLANKLINE>
+Teneo, inquit, finem illi videri nihil dolere.
+<BLANKLINE>

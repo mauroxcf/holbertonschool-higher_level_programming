@@ -33,5 +33,4 @@ class Rectangle(BaseGeometry):
 
     def __str__(self):
         return "[Rectangle] {}/{}".format(self.__width, self.__height)
-    #implementar el metodo area... hay qye volver a escribirlo e implementar el metodo magico __str__
-    #para imprimir
+

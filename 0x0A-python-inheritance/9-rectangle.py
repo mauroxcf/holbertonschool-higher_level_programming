@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ Base Geometry class """
 
+
 class BaseGeometry:
     """
     adding area and integer validator
@@ -33,4 +34,3 @@ class Rectangle(BaseGeometry):
 
     def __str__(self):
         return "[Rectangle] {}/{}".format(self.__width, self.__height)
-

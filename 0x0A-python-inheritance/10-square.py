@@ -40,6 +40,9 @@ class Square(Rectangle):
     Square class
     """
     def __init__(self, size):
+        """
+        constructor in square class and using area method
+        """
         self.integer_validator("size", size)
         self.__size = size
         super().__init__(size, size)

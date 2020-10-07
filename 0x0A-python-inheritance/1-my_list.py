@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ Class my list """
 
+
 class MyList(list):
     """
     inherit class

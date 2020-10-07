@@ -13,5 +13,3 @@ def read_lines(filename="", nb_lines=0):
             count += 1
             if count == nb_lines:
                 break
-
-

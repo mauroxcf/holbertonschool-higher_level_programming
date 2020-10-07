@@ -16,4 +16,3 @@ except:
     filej = []
 
 save_to_json_file(filej + sys.argv[1:], "add_item.json")
-

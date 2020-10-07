@@ -10,8 +10,8 @@ class MyInt(int):
 
     def __eq__(self, value):
         """ invert equal """
-        return not (self.__value is value)
+        return not (self.__value == value)
 
     def __ne__(self, value):
         """ invert negation """
-        return not (self.__value is not value)
+        return not (self.__value != value)

@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 def read_lines(filename="", nb_lines=0):
+    """
+    open a read a file
+    """
     with open(filename, mode='r', encoding="utf-8") as reader:
         count = 0
         for line in reader:

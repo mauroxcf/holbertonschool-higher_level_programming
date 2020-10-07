@@ -1,10 +1,10 @@
 #!/user/bin/python3
+"""
+obtain a json string
+"""
+
+
 import json
-
-
-"""
-load from a json file
-"""
 
 
 def load_from_json_file(filename):

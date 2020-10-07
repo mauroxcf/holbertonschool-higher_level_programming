@@ -1,10 +1,10 @@
 #!/usr/bin/python3
+"""
+obtain a json string
+"""
+
+
 import json
-
-
-"""
-save in to json file
-"""
 
 
 def save_to_json_file(my_obj, filename):

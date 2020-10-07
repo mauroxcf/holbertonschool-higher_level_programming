@@ -1,10 +1,10 @@
 #!/usr/bin/python3
+"""
+obtain a json string
+"""
+
+
 import json
-
-
-"""
-obtain json string
-"""
 
 
 def from_json_string(my_str):

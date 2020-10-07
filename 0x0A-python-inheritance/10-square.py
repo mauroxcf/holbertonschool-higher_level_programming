@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ Base Geometry class """
 
+
 class BaseGeometry:
     """
     adding area and integer validator
@@ -18,6 +19,7 @@ class BaseGeometry:
         if value < 0 or value == 0:
             raise ValueError("{} must be greater than 0".format(name))
 
+
 class Rectangle(BaseGeometry):
     """ sub class rectangle """
     def __init__(self, width, height):
@@ -34,6 +36,7 @@ class Rectangle(BaseGeometry):
     def __str__(self):
         """ print the object string """
         return "[Rectangle] {}/{}".format(self.__width, self.__height)
+
 
 class Square(Rectangle):
     """

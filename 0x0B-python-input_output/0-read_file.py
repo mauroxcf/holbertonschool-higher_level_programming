@@ -6,5 +6,5 @@ def read_file(filename=""):
     """
     read and print a file
     """
-    with open(filename) as reader:
+    with open(filename, "r") as reader:
         print(reader.read())

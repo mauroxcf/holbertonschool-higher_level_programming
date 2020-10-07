@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" read lines """
+
+
 def read_lines(filename="", nb_lines=0):
     """
     open a read a file

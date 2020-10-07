@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" append in a file """
+
+
 def append_write(filename="", text=""):
     """
     adding a new text info

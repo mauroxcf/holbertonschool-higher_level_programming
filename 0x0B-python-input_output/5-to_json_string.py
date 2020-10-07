@@ -2,6 +2,11 @@
 import json
 
 
+"""
+obtain a json string
+"""
+
+
 def to_json_string(my_obj):
     """
     read the json object into a string

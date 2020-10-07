@@ -1,4 +1,7 @@
 #!/user/bin/python3
+""" write in a file """
+
+
 def write_file(filename="", text=""):
     """
     open a write a new file

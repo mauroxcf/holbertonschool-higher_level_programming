@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-""" My obtain a json class
-"""
+""" My obtain a json class """
+
 
 def class_to_json(obj):
     """

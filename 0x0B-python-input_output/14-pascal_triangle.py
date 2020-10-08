@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" pascal triangle """
+"""
+pascal triangle
+"""
 
 
 def pascal_triangle(n):
@@ -12,7 +14,7 @@ def pascal_triangle(n):
     else:
         lista = []
         for i in range(n):
-            lista.append([1] *(i+1))
+            lista.append([1] * (i + 1))
             for j in range(1, len(lista[i])-1):
-                lista[i][j] = lista[i -1][j] + lista[i -1][j -1]
+                lista[i][j] = lista[i - 1][j] + lista[i - 1][j - 1]
         return lista

@@ -19,4 +19,3 @@ class Student:
         class object type
         """
         return self.__dict__
-

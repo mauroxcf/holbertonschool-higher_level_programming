@@ -24,3 +24,13 @@ class Square(Rectangle):
     def __str__(self):
         """ return info about the rectangle """
         return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y, self.size)
+
+    def update(self, *args, **kwargs):
+        """ assigns an argument to each attribute """
+        compare = ["id", "size", "x", "y"]
+        if args and args is not None:
+            for i in range(len(args)):
+                setattr(self, compare[i], args[i])
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)

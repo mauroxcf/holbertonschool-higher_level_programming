@@ -2,6 +2,7 @@
 """ Base class """
 
 import json
+import os
 
 class Base:
     """ First class """
@@ -57,3 +58,16 @@ class Base:
 
         dummy_SR.update(**dictionary)
         return dummy_SR
+
+    @classmethod
+    def load_from_file(cls):
+        """ returns a list of instances """
+        new_instance = []
+        filename = cls.__name__ + ".json"
+
+        if not os.path.isfile(filename):
+            return new_instance
+
+        with open(filename, mode="r", encoding="utf-8") as newfile:
+            new_instance = cls.from_json_string(newfile.read())
+        return [cls.create(**dic) for dic in new_instance]

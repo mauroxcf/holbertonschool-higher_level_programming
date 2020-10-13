@@ -4,6 +4,7 @@
 
 from models.base import Base
 
+
 class Rectangle(Base):
     """ rectangle with weight and height """
     def __init__(self, width, height, x=0, y=0, id=None):
@@ -95,5 +96,6 @@ class Rectangle(Base):
 
     def to_dictionary(self):
         """ returns the dictionary representation of a Rectangle """
-        dicto = {"x": self.x, "y": self.y, "id": self.id, "height": self.height, "width": self.width}
+        dicto = {"x": self.x, "y": self.y, "id": self.id,
+         "height": self.height, "width": self.width}
         return dicto

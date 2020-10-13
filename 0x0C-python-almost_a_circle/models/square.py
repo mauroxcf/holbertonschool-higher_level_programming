@@ -4,6 +4,7 @@
 
 from models.rectangle import Rectangle
 
+
 class Square(Rectangle):
     """ class Square """
     def __init__(self, size, x=0, y=0, id=None):
@@ -23,7 +24,8 @@ class Square(Rectangle):
 
     def __str__(self):
         """ return info about the rectangle """
-        return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y, self.size)
+        return "[Square] ({}) {}/{} - {}"\
+            .format(self.id, self.x, self.y, self.size)
 
     def update(self, *args, **kwargs):
         """ assigns an argument to each attribute """

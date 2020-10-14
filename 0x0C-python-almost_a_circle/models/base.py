@@ -10,6 +10,7 @@ class Base:
     __nb_objects = 0
 
     def __init__(self, id=None):
+        """ Constructor """
         if id is not None:
             self.id = id
         else:
@@ -65,6 +66,34 @@ class Base:
         """ returns a list of instances """
         new_instance = []
         filename = cls.__name__ + ".json"
+
+        if not os.path.isfile(filename):
+            return new_instance
+
+        with open(filename, mode="r", encoding="utf-8") as newfile:
+            new_instance = cls.from_json_string(newfile.read())
+        return [cls.create(**dic) for dic in new_instance]
+
+    @classmethod
+    def save_to_file_csv(cls, list_objs):
+        """
+        writes the JSON string representation
+        """
+        new_obj = []
+        filename = cls.__name__ + ".csv"
+
+        if list_objs is not None:
+            for i in list_objs:
+                new_obj.append(cls.to_dictionary(i))
+
+        with open(filename, mode="w", encoding="utf-8") as newfile:
+            newfile.write(cls.to_json_string(new_obj))
+
+    @classmethod
+    def load_from_file_csv(cls):
+        """ returns a list of instances """
+        new_instance = []
+        filename = cls.__name__ + ".csv"
 
         if not os.path.isfile(filename):
             return new_instance

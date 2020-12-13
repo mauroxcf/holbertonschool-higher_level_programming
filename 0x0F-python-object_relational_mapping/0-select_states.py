@@ -6,16 +6,26 @@ from sys import argv
 
 if __name__ == '__main__':
     # connect to mysql, passing 3 arguments in argv
-    db = MySQLdb.connect(host='localhost', user=argv[1], passwd=argv[2], db=argv[3], port=3306)
+    db = MySQLdb.connect(host='localhost',
+                         user=argv[1],
+                         passwd=argv[2],
+                         db=argv[3],
+                         port=3306,
+                         charset="utf8")
 
-    cur_obj = db.cursor() # cursor object
+    # cursor object
+    cur_obj = db.cursor()
 
-    cur_obj.execute("SELECT * FROM states") # select the query
+    # select the query
+    cur_obj.execute("SELECT * FROM states")
 
     myresult = cur_obj.fetchall()
 
     for i in myresult:
         print(i)
 
-    cur_obj.close() #close cursor
-    db.close() #close database
+    # close cursor
+    cur_obj.close()
+
+    # close database
+    db.close()

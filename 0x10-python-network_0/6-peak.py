@@ -11,11 +11,11 @@ def find_peak(list_of_integers):
     """
     temp = None
     for i in range(len(list_of_integers)):
-        #temp = list_of_integers[i]
+
         if list_of_integers[i] > 0:
             temp = list_of_integers[i]
 
-        if temp == None:
+        if temp is None:
             continue
 
         if temp > list_of_integers[i+1]:

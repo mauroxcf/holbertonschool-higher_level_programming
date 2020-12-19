@@ -15,14 +15,11 @@ def find_peak(list_of_integers):
         if list_of_integers[i] > 0:
             temp = list_of_integers[i]
 
-        if temp is None:
+        if temp is None or temp < list_of_integers[i+1]:
             continue
 
         if temp > list_of_integers[i+1]:
                 return temp
-
-        if temp < list_of_integers[i+1]:
-            continue
 
         else:
             return temp

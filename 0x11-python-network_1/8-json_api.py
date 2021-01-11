@@ -16,12 +16,12 @@ if __name__ == '__main__':
 
     query = {'q': data}
     response = reqs.post(url, query)
-    resjson = response.json()
 
-    if len(resjson) > 0:
-        if 'id' in resjson and 'name' in resjson:
-            print('[{}] {}'.format(resjson['id'], resjson['name']))
+    try:
+        resjson = response.json()
+        if resjson == {}:
+            print ("No result")
         else:
-            print('Not a valid JSON')
-    else:
-        print('No result')
+            print("[{}] {}".format(resjson['id'], resjson['name']))
+    except ValueError:
+        print("Not a valid JSON")

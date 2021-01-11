@@ -7,7 +7,7 @@ if __name__ == '__main__':
     import sys
     import requests as reqs
 
-    url = "http://0.0.0.0:5000/search_user"
+    url = 'http://0.0.0.0:5000/search_user'
 
     if len(sys.argv) > 1:
         data = sys.argv[1]
@@ -20,7 +20,7 @@ if __name__ == '__main__':
 
     if len(resjson) > 0:
         if 'id' in resjson and 'name' in resjson:
-            print('[{}] {}'.format(resjson.get('id'), resjson.get('name')))
+            print('[{}] {}'.format(resjson['id'], resjson['name']))
         else:
             print('Not a valid JSON')
     else:

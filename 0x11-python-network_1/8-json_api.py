@@ -20,7 +20,7 @@ if __name__ == '__main__':
     try:
         resjson = response.json()
         if resjson == {}:
-            print ("No result")
+            print("No result")
         else:
             print("[{}] {}".format(resjson['id'], resjson['name']))
     except ValueError:

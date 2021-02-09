@@ -2,7 +2,6 @@
 
 const request = require('request');
 const url = process.argv[2];
-const url2 = 'https://swapi-api.hbtn.io/api/people/18/';
 let count = 0;
 request(url, function (error, response, body) {
   if (error) {
